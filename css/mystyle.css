@@ -1,0 +1,291 @@
+:root {
+    --maincolor : #1E2A5E;
+    --secondarycolor : #161B33;
+    --acsentcolor : #E1D7B7;
+    --fontcolor : #ffffff;
+    --fontgradient : right, #fff, var(--acsentcolor);
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+  
+
+body{
+    background-color :var(--maincolor);
+    font-family: "Inter",sans-serif;
+    height: 500px;
+}
+
+.navbar-dark{
+    background-color: var(--maincolor);
+    z-index: 10;
+}
+
+.navbar-brand{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;   
+}
+
+.nav-link.active{
+    color: var(--acsentcolor) !important;
+    /* text-decoration: underline 3.2px; */
+}
+
+.navbar-nav{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    /* background-color: #fff; */
+}
+
+.text-nama{
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hello{
+    color: #7C93C3;
+    font-size: 20px;
+}
+
+.job{
+    font-weight: bolder;
+    font-size: 48px;
+    background-image:  linear-gradient(to left, var(--acsentcolor), #fff);
+    background-clip: text;
+    color: transparent;
+}
+
+.photo{
+    align-content: end !important;
+}
+
+#hero{
+    height: 450px;
+    align-content: center;
+    padding-top: 4%;
+}
+
+#intro{
+    margin-top: 4%;
+    height: 500px;
+    color: #A59A6B;
+    text-align: center;
+    background-image:  linear-gradient(to top, var(--secondarycolor), var(--maincolor))
+}
+
+#intro h2 {
+    font-size: 20px;
+    font-weight: 400;
+    /* margin-top: 2%; */
+    color: #7C93C3;
+    margin-bottom: 3%;
+}
+
+#intro h1 {
+    margin-top: 20%;
+    font-size: 32px;
+    font-weight: 700;
+    background-image:  linear-gradient(to left, var(--acsentcolor), #6e663e);
+    background-clip: text;
+    color: transparent;
+}
+
+#intro p{
+    font-size: 16px;
+}
+
+.btn-custom1{
+    margin-top: 20px;
+    background-color: transparent;
+    border-color: #E1D7B7;
+    text-align: center;
+    color: var(--acsentcolor);
+    min-width: 150px;
+    min-height: 45px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.klmgbr a{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#porto{
+    /* height: 600px; */
+    background-image: linear-gradient(to bottom, var(--maincolor), var(--secondarycolor));
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.iframe-col{
+    position: relative;
+    margin: auto;
+}
+
+#porto iframe{
+    height: 230px;
+    aspect-ratio: 16/9;
+    margin-bottom: 5%;
+}
+
+#porto h1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 24px;
+    font-weight: 600;
+    background-image:  linear-gradient(to left, #fff, #a09663);
+    background-clip: text;
+    color: transparent;
+}
+
+.overlay-text {
+    position: absolute;
+    width: 150px;
+    height: 255px;
+    font-weight: 700;
+    top: -5%;
+    right: -2%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    color: var(--acsentcolor);
+    background-image: linear-gradient(to right, #00000050, #000000);
+    padding: 10px;
+    /* border-radius: 5px; */
+    display: none;
+    text-align: justify;
+}
+
+#image{
+    /* height: 600px; */
+    background-image: linear-gradient(to top, var(--maincolor), var(--secondarycolor));
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#image h1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 24px;
+    font-weight: 600;
+    background-image:  linear-gradient(to left, #fff, #a09663);
+    background-clip: text;
+    color: transparent;
+}
+
+#image .carousel-item {
+    height: 500px;
+}
+
+#image .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#image .carousel-caption {
+    background-image: linear-gradient(to bottom, #2a325765, var(--secondarycolor));
+    color: var(--acsentcolor);
+    font-weight: 500;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%); /* Mulai dari atas */
+        opacity: 0; /* Sembunyikan */
+    }
+    to {
+        transform: translateX(0); /* Akhir di posisi normal */
+        opacity: 1; /* Tampilkan */
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay-text {
+        display: block; /* Nonaktifkan hover pada layar kecil */
+        width: 85%;
+        height: 40%;
+        top: 70%;
+        right: -35%;    
+    }
+
+    .photo {
+        width: 40%;
+    }
+    .text-nama {
+        font-size: 17px;
+    }
+    .hello {
+        font-size: 15px;
+    }
+    .job {
+        font-size: 25px;
+    }
+    .text1 {
+        width: 50%;
+    }
+    .space {
+        width: 10%;
+    }
+
+    #hero {
+        padding-top: 7%;
+        height: 50%;
+    }
+
+    #intro h1 {
+        font-size: large;
+    }
+    #intro h2 {
+        font-size: medium;
+    }
+    #intro p{
+        font-size: small;
+    }
+    #intro {
+        height: 75%;
+    }
+
+    #image .carousel-item {
+        height: 400px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .iframe-col:hover iframe{
+        transform: scale(1.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        animation-duration: 20ms;
+    }
+
+    .iframe-col:hover .overlay-text{
+        display: block;
+        animation: slideRight 0.5s forwards;
+        position: absolute;
+    }
+
+    #image .carousel-item:hover {
+        height: fit-content;
+    }
+}
