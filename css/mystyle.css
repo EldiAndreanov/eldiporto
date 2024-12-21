@@ -68,18 +68,22 @@ body{
     color: transparent;
 }
 
-.photo{
+/* .photo{
     align-content: end !important;
-}
+} */
 
 #hero{
+    background-image: url('../Image/!SSPulang.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 450px;
     align-content: center;
     padding-top: 4%;
 }
 
 #intro{
-    margin-top: 4%;
+    padding-top: 2%;
     height: 500px;
     color: #A59A6B;
     text-align: center;
@@ -178,7 +182,7 @@ body{
     align-content: center;
     text-align: center;
     text-justify: center;
-    padding-top: 3%;
+    padding-top: 5%;
     padding-bottom: 3%;
 }
 
@@ -229,14 +233,15 @@ body{
         right: -35%;    
     }
 
-    .photo {
+    /* .photo {
         width: 40%;
-    }
+    } */
     .text-nama {
-        font-size: 17px;
+        margin-top: 5%;
+        font-size: 20px;
     }
     .hello {
-        font-size: 15px;
+        font-size: 17px;
     }
     .job {
         font-size: 25px;
@@ -249,7 +254,7 @@ body{
     }
 
     #hero {
-        padding-top: 7%;
+        padding-top: 10%;
         height: 50%;
     }
 
