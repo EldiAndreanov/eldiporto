@@ -21,14 +21,32 @@
   
 
 body{
+    background-image: url('../Image/!SSPulang.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color :var(--maincolor);
     font-family: "Inter",sans-serif;
     height: 500px;
 }
 
-.navbar-dark{
+/* .navbar-dark{
     background-color: var(--maincolor);
     z-index: 10;
+} */
+
+.navbar-dark {
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 10;
+}
+.navbar-dark.transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+  /* Navbar dengan warna */
+.navbar-dark.scrolled {
+    background-color: var(--maincolor);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand{
@@ -73,13 +91,10 @@ body{
 } */
 
 #hero{
-    background-image: url('../Image/!SSPulang.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 450px;
     align-content: center;
     padding-top: 4%;
+    background-image:  linear-gradient(to top, #1E2A5E, #1e2a5e00)
 }
 
 #intro{

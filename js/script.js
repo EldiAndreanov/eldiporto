@@ -20,3 +20,18 @@ document.querySelectorAll(".btn-custom1").forEach((button) => {
       link.click();
     });
 });
+
+
+ // Ambil elemen navbar
+const navbar = document.querySelector('.navbar-dark');
+
+ // Tambahkan event listener untuk scroll
+window.addEventListener('scroll', () => {
+   if (window.scrollY > 50) {
+     navbar.classList.add('scrolled');
+     navbar.classList.remove('transparent');
+   } else {
+     navbar.classList.add('transparent');
+     navbar.classList.remove('scrolled');
+   }
+ });
