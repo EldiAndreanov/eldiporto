@@ -21,7 +21,6 @@ document.querySelectorAll(".btn-custom1").forEach((button) => {
     });
 });
 
-
  // Ambil elemen navbar
 const navbar = document.querySelector('.navbar-dark');
 
@@ -35,3 +34,12 @@ window.addEventListener('scroll', () => {
      navbar.classList.remove('scrolled');
    }
  });
+
+ function setActive(event) {
+  // Hapus kelas 'active' dari semua link
+  const links = document.querySelectorAll('.nav-link');
+  links.forEach(link => link.classList.remove('active'));
+
+  // Tambahkan kelas 'active' ke elemen yang diklik
+  event.target.classList.add('active');
+}
