@@ -251,6 +251,15 @@ body{
     /* .photo {
         width: 40%;
     } */
+
+    .navbar-dark.transparent{
+        background-color: var(--maincolor);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand{
+        font-size: 20px;
+    }
+
     .text-nama {
         margin-top: 5%;
         font-size: 20px;
